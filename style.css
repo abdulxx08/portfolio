@@ -225,6 +225,7 @@ body {
 .hero-buttons {
   display: flex;
   gap: 1rem;
+  margin-buttom:5px;
 }
 .btn {
   padding: .75rem 2rem;
