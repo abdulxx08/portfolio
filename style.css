@@ -206,7 +206,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 0;
-  margin-right:5px;
+  margin-leftt:5px;
 }
 .hero-content {
   flex: 1;
@@ -225,7 +225,7 @@ body {
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  margin-buttom:5px;
+  margin-bottom:5px;
 }
 .btn {
   padding: .75rem 2rem;
