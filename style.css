@@ -91,7 +91,6 @@ body:not([data-theme="dark"]) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-left:5px;
 }
 html { scroll-behavior: smooth; }
 body {
@@ -207,6 +206,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 0;
+  margin-right:5px;
 }
 .hero-content {
   flex: 1;
