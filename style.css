@@ -206,7 +206,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 0;
-  margin-leftt:5px;
+  margin-left: 10px;
 }
 .hero-content {
   flex: 1;
@@ -225,7 +225,7 @@ body {
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  margin-bottom:5px;
+  margin-bottom: 10px;
 }
 .btn {
   padding: .75rem 2rem;
@@ -255,6 +255,7 @@ body {
   width: 300px;
   border-radius: 50%;
 }
+
 
 /* ===== Sections & Dividers ===== */
 section {
