@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hassan Abdulwahab | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">ABDUL<span>.</span></a>
+      <div class="nav-links" id="nav-menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#what-i-do">What I Do</a></li>
+          <li><a href="#tech-stack">Skills</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <div></div><div></div><div></div>
+      </div>
+
+      <!-- Dark/Light Toggle -->
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+    </div>
+    
+  </nav>
+ 
+  
+  <!-- Hero -->
+  <section class="hero fade-in-section" id="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlighted">Hassan Abdulwahab</span></h1>
+      <p class="subtitle">Crafting stunning websites with creativity and tech.</p>
+      <div class="hero-buttons">
+        <a href="Hassan_Abdulwahab_Resume.pdf" class="btn primary-btn" download>Download Resume</a>
+        <a href="#contact" class="btn secondary-btn">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="./images/IMG_4F038E4E1F64-1.jpeg" alt="Hassan Abdulwahab">
+    </div>
+  </section>
+
+  <hr class="fade-in-section">
+
+  <!-- About Me -->
+  <section class="about fade-in-section" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate full-stack web developer who blends creativity with technical expertise. With a background in JavaScript, React, and Node.js, I build scalable, user-friendly applications that solve real-world problems.</p>
+    </div>
+  </section>
+
+  <hr class="fade-in-section">
+
+  <!-- What I Do -->
+  <section class="services fade-in-section" id="what-i-do">
+    <div class="container">
+      <h2>What I Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Frontend Development</h3>
+          <p>Building responsive, accessible UIs with HTML, CSS, and modern JavaScript frameworks.</p>
+        </div>
+        <div class="service-card">
+          <h3>Backend Development</h3>
+          <p>Creating robust APIs and server-side logic with Node.js and Express.</p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive interfaces and user journeys that delight users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="fade-in-section">
+
+  <!-- Tech Stack -->
+  <section class="tech-stack fade-in-section" id="tech-stack">
+    <div class="container">
+      <h2>My Tech Stack</h2>
+      <div class="tech-icons">
+        <div class="tech-item">
+          <img src="./images/html5-brands.svg" alt="HTML"><h3>HTML</h3>
+        </div>
+        <div class="tech-item">
+          <img src="./images/css3-alt-brands.svg" alt="CSS"><h3>CSS</h3>
+        </div>
+        <div class="tech-item">
+          <img src="./images/js-brands.svg" alt="JavaScript"><h3>JavaScript</h3>
+        </div>
+        <div class="tech-item">
+          <img src="./images/react-brands.svg" alt="React"><h3>React</h3>
+        </div>
+        <div class="tech-item">
+          <img src="./images/node-brands.svg" alt="Node.js"><h3>Node.js</h3>
+        </div>
+        <div class="tech-item">
+            <img src="./images/github-brands.svg" alt="Github"><h3>Github</h3>
+          </div>
+          <div class="tech-item">
+            <img src="./images/figma-brands.svg" alt="Figma"><h3>Figma</h3>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="fade-in-section">
+
+  <hr class="fade-in-section">
+
+<!-- ===== Blog / Insights Section ===== -->
+<section id="blog" class="fade-in-section">
+  <div class="container">
+    <h2>Insights & Articles</h2>
+    <div class="blog-grid">
+      <!-- Blog Post 1 -->
+      <article class="blog-card">
+        <img src="./images/Optimizing React Performance.jpg" alt="Article 1">
+        <div class="card-content">
+          <h3><a href="blog/post-1.html">Optimizing React Performance</a></h3>
+          <p>How to squeeze every last millisecond out of your React app’s render.</p>
+          <a href="blog/post-1.html" class="read-more">Read More →</a>
+        </div>
+      </article>
+      <!-- Blog Post 2 -->
+      <article class="blog-card">
+        <img src="./images/Node.js Security Best Practices.jpg" alt="Article 2">
+        <div class="card-content">
+          <h3><a href="blog/post-2.html">Node.js Security Best Practices</a></h3>
+          <p>Top tips to keep your Express API safe and locked down.</p>
+          <a href="blog/post-2.html" class="read-more">Read More →</a>
+        </div>
+      </article>
+      <!-- Blog Post 3 -->
+      <article class="blog-card">
+        <img src="./images/CSS Grid vs. Flexbox: When to Use Which.jpg" alt="Article 3">
+        <div class="card-content">
+          <h3><a href="blog/post-3.html">CSS Grid vs. Flexbox: When to Use Which</a></h3>
+          <p>A quick guide to choosing the right layout tool for your next project.</p>
+          <a href="blog/post-3.html" class="read-more">Read More →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="fade-in-section">
+
+<!-- ===== Case Studies Section ===== -->
+<section id="case-studies" class="fade-in-section">
+  <div class="container">
+    <h2>Case Studies</h2>
+    <div class="case-grid">
+      
+      <!-- Case Study 1 -->
+      <div class="case-card">
+        <img src="./images/Restaurant Site Redesign.png" alt="Dashboard screenshot">
+        <div class="case-content">
+          <h3>Restaurant Site Redesign</h3>
+          <p><strong>Challenge:</strong> Slow load times and outdated look</p>
+          <p><strong>Solution:</strong> Rebuilt with Next.js, optimized images, added modern design system</p>
+          <p><strong>Result:</strong> 45% faster load, 30% increase in reservations</p>
+          <a href="projects/case1.html" class="btn read-more">View Details →</a>
+        </div>
+      </div>
+      
+      <!-- Case Study 2 -->
+      <div class="case-card">
+        <img src="./images/Analytics Dashboard.jpg" alt="Analytics dashboard">
+        <div class="case-content">
+          <h3>Analytics Dashboard</h3>
+          <p><strong>Challenge:</strong> Unintuitive UI causing user drop-off</p>
+          <p><strong>Solution:</strong> Redesigned workflows, added real-time charts with D3.js</p>
+          <p><strong>Result:</strong> 50% lift in user engagement, 20% lower churn</p>
+          <a href="projects/case2.html" class="btn read-more">View Details →</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- Portfolio / Projects -->
+  <section class="portfolio fade-in-section" id="projects">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="./images/Screenshot 2025-04-27 at 17.10.31.png" alt="Project 1">
+          <div class="portfolio-info">
+            <h3>Restaurant Website</h3>
+            <p>Modern, fast site for a local restaurant.</p>
+            <a class="view-btn" href="">view demo →</a>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="./images/Artist Portfolio.jpg" alt="Project 2">
+          <div class="portfolio-info">
+            <h3>Artist Portfolio</h3>
+            <p>Creative showcase platform for an artist.</p>
+            <a class="view-btn" href="">view demo →</a>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="./images/App Landing Page.jpg" alt="Project 3">
+          <div class="portfolio-info">
+            <h3>App Landing Page</h3>
+            <p>Landing page for a tech mobile app.</p>
+            <a class="view-btn" href="">view demo →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="fade-in-section">
+
+  <!-- Testimonials -->
+  <section class="testimonials fade-in-section" id="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <p>“Hassan consistently delivers top-notch work and went above and beyond our expectations.”</p>
+        <h4>- Jane Doe, CEO of Acme Corp</h4>
+      </div>
+      <div class="testimonial">
+        <p>“His attention to detail and collaborative approach made the project a success.”</p>
+        <h4>- John Smith, CTO of TechSolutions</h4>
+      </div>
+    </div>
+  </section>
+
+  <hr class="fade-in-section">
+
+  <!-- FAQ -->
+  <section class="faq fade-in-section" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3>How long to build a website?</h3>
+        <p>Typically 2–4 weeks depending on complexity.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer support?</h3>
+        <p>Yes, 30 days of free post-launch support.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can you work with my existing design?</h3>
+        <p>Absolutely—I'm happy to integrate or enhance any mockups or wireframes.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="fade-in-section">
+
+<!-- ===== Contact Section ===== -->
+<section id="contact" class="contact fade-in-section">
+    <div class="container contact-container">
+      <h2>Contact Me</h2>
+      <p class="contact-intro">I’m always excited to discuss new projects or opportunities. Fill out the form or reach me via the details below.</p>
+      <div class="contact-content">
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <div class="detail-item">
+            <img src="./images/envelope-solid.svg" alt="Email icon" class="detail-icon">
+            <div>
+              <h4>E-mail</h4>
+              <p>Hass46050@gmail.com</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <img src="./images/phone-solid.svg" alt="Phone icon" class="detail-icon">
+            <div>
+              <h4>Phone</h4>
+              <p>+234 913 624 6283</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <img src="./images/location-dot-solid.svg" alt="Location icon" class="detail-icon">
+            <div>
+              <h4>Location</h4>
+              <p>Rivers State, PHc</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+   <!-- Footer -->
+   <footer>
+    <div class="container footer-container">
+      <p>© 2025 Hassan Abdulwahab. All rights reserved.</p>
+      <div class="social-links">
+        <a href="" target="_blank" rel="noopener">
+          <img src="./images/x-twitter-brands.svg" alt="Twitter">
+        </a>
+        <a href="https://github.com/dashboard" target="_blank" rel="noopener">
+          <img src="./images/github-brands.svg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">
+          <img src="./images/linkedin-in-brands.svg" alt="LinkedIn">
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">
+            <img src="./images/whatsapp-brands.svg" alt="whatsapp">
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">
+            <img src="./images/facebook-brands.svg" alt="facebook">
+          </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
