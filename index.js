@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.setAttribute('data-theme', savedTheme);
     themeToggle.checked = savedTheme === 'dark';
   } else {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.body.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-    themeToggle.checked = prefersDark;
+    const prefersLight = window.matchMedia('(prefers-color-scheme: Light)').matches;
+    document.body.setAttribute('data-theme', prefersLight ? 'dark' : 'light');
+    themeToggle.checked = prefersLight;
   }
   themeToggle.addEventListener('change', () => {
     const newTheme = themeToggle.checked ? 'dark' : 'light';
