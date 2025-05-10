@@ -1,4 +1,3 @@
-// index.js
 document.addEventListener('DOMContentLoaded', () => {
   // ===== Fade-in Observer =====
   const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -100px 0px' };
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== Contact Form Submission =====
   const contactForm = document.querySelector('.contact-form');
   contactForm.addEventListener('submit', (e) => {
-    e.preventDefault(); // Prevent the page from refreshing
+    e.preventDefault(); // Prevent the default form submit behavior (page reload)
 
     // Get the form data
     const formData = new FormData(contactForm);
@@ -55,9 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = formData.get('message');
 
     // For demonstration purposes, log the values
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
+    console.log('name:', name);
+    console.log('email:', email);
+    console.log('message:', message);
 
     // Send the form data to EmailJS
     emailjs.sendForm('service_127sx7w', 'template_t7xtf9u', contactForm)
@@ -69,8 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Oops, something went wrong. Please try again.');
       });
   });
-});
-
 
   // ===== Smooth Scrolling =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -81,5 +78,4 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-
- 
+});
