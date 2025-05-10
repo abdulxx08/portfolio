@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.setAttribute('data-theme', savedTheme);
     themeToggle.checked = savedTheme === 'dark';
   } else {
-    const prefersLight = window.matchMedia('(prefers-color-scheme: Light)').matches;
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
     document.body.setAttribute('data-theme', prefersLight ? 'dark' : 'light');
     themeToggle.checked = prefersLight;
   }
@@ -43,18 +43,43 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', newTheme);
   });
 
-  // ===== Contact Form Validation =====
-  const form = document.querySelector('.contact-form');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const name    = form.querySelector('#name').value.trim();
-    const email   = form.querySelector('#email').value.trim();
-    const message = form.querySelector('#message').value.trim();
-    if (!name || !email || !message) {
-      alert('Please fill out all fields.');
-    } else {
-      alert('Message sent successfully!');
-      form.reset();
-    }
+  // ===== Contact Form Submission =====
+  const contactForm = document.querySelector('.contact-form');
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent the page from refreshing
+
+    // Get the form data
+    const formData = new FormData(contactForm);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    // For demonstration purposes, log the values
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+
+    // Send the form data to EmailJS
+    emailjs.sendForm('service_127sx7w', 'template_t7xtf9u', contactForm)
+      .then(() => {
+        alert('Message sent successfully!');
+        contactForm.reset(); // Reset the form after successful submission
+      }, (error) => {
+        console.error('Error sending message:', error);
+        alert('Oops, something went wrong. Please try again.');
+      });
   });
 });
+
+
+  // ===== Smooth Scrolling =====
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+ 
